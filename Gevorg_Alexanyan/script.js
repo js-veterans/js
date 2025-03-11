@@ -194,19 +194,42 @@
 
 
 
-function erankyun(a, b, c) {
-    if (a >= b + c || b >= a + c || c >= a + b) {
-        console.log("Doesn't exist")
-    }else{
-        console.log ( "Exist")
-        let s=(a+b+c)/2
-        console.log(Math.sqrt(s*(s-a)*(s-b)*(s-c)))
+// function erankyun(a, b, c) {
+//     if (a >= b + c || b >= a + c || c >= a + b) {
+//         console.log("Doesn't exist")
+//     }else{
+//         console.log ( "Exist")
+//         let s=(a+b+c)/2
+//         console.log(Math.sqrt(s*(s-a)*(s-b)*(s-c)))
         
+//     }
+// }
+
+// erankyun(1, 2, 3);
+// erankyun(2, 2, 5)
+// erankyun(3, 4, 5);   
+
+
+
+let a = Number(prompt("Enter value for a (ax^2 + bx + c = 0):"));
+let b = Number(prompt("Enter value for b (ax^2 + bx + c = 0):"));
+let c = Number(prompt("Enter value for c (ax^2 + bx + c = 0):"));
+
+function discriminant(a, b, c) {
+    let D = b ** 2 - 4 * a * c; 
+     console.log(D);
+     
+    if (D < 0) {
+        console.log("X is not defined (no real solutions)");
+    } else if (D === 0) {  
+        let x = -b / (2 * a);
+        console.log("X =", x);
+    } else {
+        let x1 = (-b + Math.sqrt(D)) / (2 * a);
+        let x2 = (-b - Math.sqrt(D)) / (2 * a);
+        console.log("1. X =", x1);
+        console.log("2. X =", x2);
     }
 }
-
-erankyun(1, 2, 3);
-erankyun(2, 2, 5)
-erankyun(3, 4, 5);   
-
+discriminant(a,b,c)
 
