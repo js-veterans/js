@@ -198,10 +198,15 @@ function erankyun(a, b, c) {
     if (a >= b + c || b >= a + c || c >= a + b) {
         console.log("Doesn't exist")
     }else{
-        console.log ( "Exist" )
+        console.log ( "Exist")
+        let s=(a+b+c)/2
+        console.log(Math.sqrt(s*(s-a)*(s-b)*(s-c)))
+        
     }
 }
 
 erankyun(1, 2, 3);
 erankyun(2, 2, 5)
-erankyun(3, 4, 5);    
+erankyun(3, 4, 5);   
+
+
