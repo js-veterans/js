@@ -163,12 +163,19 @@
 // divid(15, 4)
 
 
-let a = Number(prompt("Եռանկյան առաջին կողմ"))
-let b = Number(prompt("Եռանկյան երկրորդ կողմ"))
-let c = Number(prompt("Եռանկյան երրորդ կողմ"))
+// let a = Number(prompt("Եռանկյան առաջին կողմ"))
+// let b = Number(prompt("Եռանկյան երկրորդ կողմ"))
+// let c = Number(prompt("Եռանկյան երրորդ կողմ"))
 
-if(a + b > c && a + c > b && b + c > a){
-    alert("Գոյություն ունի")
-}else{
-    alert("Գոյություն չունի")
+// if(a + b > c && a + c > b && b + c > a){
+//     alert("Գոյություն ունի")
+// }else{
+//     alert("Գոյություն չունի")
+// }
+
+function makeres(a, b, c) {
+    let p = (a + b + c) / 2
+    let s = Math.sqrt(p * (p - a) * (p - b) * (p - c))
+    return s
 }
+alert(makeres(2, 2, 2))
