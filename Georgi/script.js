@@ -173,9 +173,19 @@
 //     alert("Գոյություն չունի")
 // }
 
-function makeres(a, b, c) {
-    let p = (a + b + c) / 2
-    let s = Math.sqrt(p * (p - a) * (p - b) * (p - c))
-    return s
+// function makeres(a, b, c) {
+//     let p = (a + b + c) / 2
+//     let s = Math.sqrt(p * (p - a) * (p - b) * (p - c))
+//     return s
+// }
+// alert(makeres(2, 2, 2))
+
+function erankyun(a, b, c) {
+    if (a + b > c && a + c > b && b + c > a) {
+        alert("Գոյություն ունի")
+    } else {
+        alert("Գոյություն չունի")
+    }
 }
-alert(makeres(2, 2, 2))
+
+erankyun(2, 2, 2)
