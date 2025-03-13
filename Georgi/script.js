@@ -180,12 +180,27 @@
 // }
 // alert(makeres(2, 2, 2))
 
-function erankyun(a, b, c) {
-    if (a + b > c && a + c > b && b + c > a) {
-        alert("Գոյություն ունի")
+// function erankyun(a, b, c) {
+//     if (a + b > c && a + c > b && b + c > a) {
+//         alert("Գոյություն ունի")
+//     } else {
+//         alert("Գոյություն չունի")
+//     }
+// }
+
+// erankyun(2, 2, 2)
+
+function armatner(a, b, c) {
+    let d = b * b - 4 * a * c
+    if (d === 0) {
+        alert("armat chka")
+    } else if (d > 0) {
+        let x1 = (-b + Math.sqrt(d)) / (2 * a)
+        let x2 = (-b - Math.sqrt(d)) / (2 * a)
+        alert("x1 = " + x1 + ", x2 = " + x2)
     } else {
-        alert("Գոյություն չունի")
+        let x3 = -b / (2 * a)
+        alert("x1 = x2 =" + x3)
     }
 }
-
-erankyun(2, 2, 2)
+armatner(2, 2, 2)
