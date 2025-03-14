@@ -214,5 +214,102 @@
     
     
     // armat(1, -3, 2);  
+
+
+
     
+//  const car = {
+//     name: 'Tesla',
+//     model: 'X',
+//     type: 'Electrical',
+//     year: 2017,
+//     img: "https://s.list.am/f/855/86686855.webp"
+//  };
+
+
+//  console.log(`${car.name} ${car.model}`);
+//  console.log(`${car.type} ${car.year}` );
+
+
+// const person = {
+//     firstName: "Aram",
+//     lastName: "Melkonyan",
+//     greet: function(name){
+//      return `Hello ${name}`
+//     }
+// }
+
+// console.log(person.greet("Aram"))
+
+
+// const matem = {
+//     astichan: function(a, b){
+//       return a ** b;
  
+//     }, 
+//     armat: function (a) {
+//         return Math.sqrt(a)
+//     },
+//     klor: function (a){
+//         return Math.round(a)
+//     }
+   
+// }
+
+// console.log(matem.astichan(2, 5))
+// console.log(Math.ceil(matem.armat(48)))
+
+
+// const number = [3, 5, 2, 65, 45]
+
+// for(let i = 0; i < number.length; i++){
+//     console.log(number[i] ** 2)
+// }
+
+
+
+
+// const number = [3, 5, 2, 65, 45, 4, 8]
+
+// for(let i = 0; i < number.length; i++){
+//    if(number[i] % 2 == 0){
+//     console.log(number[i])
+//    }
+// }
+
+
+
+// const number = [3, 5, 2, 65, 45, 4, 8]
+
+// for(let i = 0; i < number.length; i++){
+//    if(number[i] % 2 == 0 && i % 2 != 0){
+//     console.log(number[i])
+//    }
+// }
+
+// let array = []
+// let number = Number(prompt("Greq tiv"));
+
+// for(let i = 0; i <= number; i++){
+//     if(i % 5 == 0){
+//         array.push(i)
+//     }
+    
+// }
+// console.log(array);
+
+
+let names = ["Michael","Emma","David","Sophia","James","Olivia","John","Isabella","Robert","Mia","William","Charlotte","Daniel","Amelia","Joseph","Harper","Charles","Evelyn","Thomas","Abigail"];
+let newNames = [];
+
+for(let i = 0; i < names.length; i++){
+
+for(let j = 0; j < names[i].length; j++){
+
+    if(names[i][j] == 'a' || names[i][j] == 'A'){
+        newNames.push(names[i])
+    }
+}
+}
+
+console.log(newNames)
