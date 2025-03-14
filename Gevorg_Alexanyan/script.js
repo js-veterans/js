@@ -201,7 +201,7 @@
 //         console.log ( "Exist")
 //         let s=(a+b+c)/2
 //         console.log(Math.sqrt(s*(s-a)*(s-b)*(s-c)))
-        
+
 //     }
 // }
 
@@ -211,25 +211,179 @@
 
 
 
-let a = Number(prompt("Enter value for a (ax^2 + bx + c = 0):"));
-let b = Number(prompt("Enter value for b (ax^2 + bx + c = 0):"));
-let c = Number(prompt("Enter value for c (ax^2 + bx + c = 0):"));
+// let a = Number(prompt("Enter value for a (ax^2 + bx + c = 0):"));
+// let b = Number(prompt("Enter value for b (ax^2 + bx + c = 0):"));
+// let c = Number(prompt("Enter value for c (ax^2 + bx + c = 0):"));
 
-function discriminant(a, b, c) {
-    let D = b ** 2 - 4 * a * c; 
-     console.log(D);
+// function discriminant(a, b, c) {
+//     let D = b ** 2 - 4 * a * c; 
+//      console.log(D);
+
+//     if (D < 0) {
+//         console.log("X is not defined (no real solutions)");
+//     } else if (D === 0) {  
+//         let x = -b / (2 * a);
+//         console.log("X =", x);
+//     } else {
+//         let x1 = (-b + Math.sqrt(D)) / (2 * a);
+//         let x2 = (-b - Math.sqrt(D)) / (2 * a);
+//         console.log("1. X =", x1);
+//         console.log("2. X =", x2);
+//     }
+// }
+// discriminant(a,b,c)
+
+// function erankyun(a, b, c) {
+//         if (a >= b + c || b >= a + c || c >= a + b) {
+//             console.log("Doesn't exist")
+//         }else{
+//             console.log ( "Exist")
+//             let s=(a+b+c)/2
+//             console.log(Math.sqrt(s*(s-a)*(s-b)*(s-c)))
+//             return
+//         }
+//     }
+
+//     erankyun(1, 2, 3);
+//     erankyun(2, 2, 5)
+//     erankyun(3, 4, 5);   
+
+
+// const myCity = {
+//     city: "asd",
+// }
+// myCity.popular = true,
+
+// console.log(myCity);
+
+// myCity.country = "USA",
+
+// console.log(myCity);
+
+
+// const car = {
+//     model: "Кран MAZ (МАЗ)",
+//     taretiv: 1992,
+//     arjeq: "15000$",
+//     img: "https://s.list.am/f/332/85055332.webp",
+//     owner: "Davo"
+
+// }
+
+// console.log(`${car.model} ${car.taretiv}`);
+
+
+// const car = {
+
+// } 
+
+// car.name = "tesla"
+
+// console.log(car);
+
+// car.price = "120000$"
+
+// console.log();
+
+
+// const person = {
+//     firstName: "John",
+//     lastName:  "Doe",
+//     greet: function(name){
+//         return `hello ${name}`
+//     }
+// }
+
+
+
+// console.log(person.greet("Gevorg"));
+
+
+// const mathm = {
+//     astechan: function (a, b) {
+//         return a ** b
+//     },
+//     armat: function (a, b) {
+//         return a ** (1 / b)
+//     },
+//     klor: function (a) {
+//         if (a % 1 > 0.5 ){
+//             return a+1
+//         }else if(a % 1 == 0.5){
+//             return a + 0.5
+//         }
+//          else {
+//          return a - (a % 1) 
+//         }
+//     }
+// }
+// console.log(mathm.astechan(2,8));
+
+// console.log(mathm.armat(256,8));
+
+// console.log(mathm.klor(2,443312) );
+
+// console.log(mathm.klor(3.5))
+
+// const tver = [ ]
+
+//  for ( let i=0 ; i<tver.length ; i++ ) {
+//     if( tver[i]%2 == 0 && i%2==1 ) {
+//         console.log(`${tver[i]} ${tver[i]**2}`)
+//     }else{}
+
+
+    
+    // console.log(`${tver[i]} ${tver[i]**2}`)}
+
+//     let a  = Number(prompt("tiv"))
+//     let d  = Number(prompt("tiv1"))
+    
+    
+    
+
+//     for (let i=0; i <= a; i++){
+//      if( i%d==0){
+//          tver.push(i)
+        
+//      }
+//    }
      
-    if (D < 0) {
-        console.log("X is not defined (no real solutions)");
-    } else if (D === 0) {  
-        let x = -b / (2 * a);
-        console.log("X =", x);
-    } else {
-        let x1 = (-b + Math.sqrt(D)) / (2 * a);
-        let x2 = (-b - Math.sqrt(D)) / (2 * a);
-        console.log("1. X =", x1);
-        console.log("2. X =", x2);
-    }
-}
-discriminant(a,b,c)
+//    console.log(tver)
 
+
+const names = [
+    "Michael",
+    "Emma",
+    "David",
+    "Sophia",
+    "James",
+    "Olivia",
+    "John",
+    "Isabella",
+    "Robert",
+    "Mia",
+    "William",
+    "Charlotte",
+    "Daniel",
+    "Amelia",
+    "Joseph",
+    "Harper",
+    "Charles",
+    "Evelyn",
+    "Thomas",
+    "Abigail"
+  ]
+
+  for (let i = 0; i < names.length; i++) {
+    for(let g = 0; g < names[i].length; g++){
+        if (names[i][g] == "a" || names[i][g] == "A" ){
+            console.log(names[i]);
+            
+        }
+    }
+  }
+ 
+
+
+  
