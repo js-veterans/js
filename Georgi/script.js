@@ -131,7 +131,6 @@
 // let b = Math.floor(x / 10) % 10
 // console.log(100 * c + 10 * b + a);
 
-
 // console.log(c);
 // console.log(b);
 // console.log(Math.floor(a));
@@ -150,18 +149,15 @@
 // let tiv = Number(prompt("x"))
 // tars(tiv)
 
-
-
 // function divid(a, b) {
 //     if (a % b == 0){
 //         alert("yes")
 //     }else{
 //         alert("no")
-//     }    
+//     }
 // }
 
 // divid(15, 4)
-
 
 // let a = Number(prompt("Եռանկյան առաջին կողմ"))
 // let b = Number(prompt("Եռանկյան երկրորդ կողմ"))
@@ -191,16 +187,16 @@
 // erankyun(2, 2, 2)
 
 function armatner(a, b, c) {
-    let d = b * b - 4 * a * c
-    if (d === 0) {
-        alert("armat chka")
-    } else if (d > 0) {
-        let x1 = (-b + Math.sqrt(d)) / (2 * a)
-        let x2 = (-b - Math.sqrt(d)) / (2 * a)
-        alert("x1 = " + x1 + ", x2 = " + x2)
-    } else {
-        let x3 = -b / (2 * a)
-        alert("x1 = x2 =" + x3)
-    }
+  let d = b * b - 4 * a * c;
+  if (d === 0) {
+    alert("armat chka");
+  } else if (d > 0) {
+    let x1 = (-b + Math.sqrt(d)) / (2 * a);
+    let x2 = (-b - Math.sqrt(d)) / (2 * a);
+    alert("x1 = " + x1 + ", x2 = " + x2);
+  } else {
+    let x3 = -b / (2 * a);
+    alert("x1 = x2 =" + x3);
+  }
 }
-armatner(2, 2, 2)
+armatner(2, 2, 2);

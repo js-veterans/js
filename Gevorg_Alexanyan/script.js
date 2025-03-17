@@ -1,7 +1,7 @@
 // let a = Number(prompt("Enter Height:"));
 // let b = Number(prompt("Enter Width:"));
 
-// alert("Perimeter: " + (2 * (a + b))); 
+// alert("Perimeter: " + (2 * (a + b)));
 // alert("Area: " + (a * b));
 
 // let a = (prompt("Enter your name"))
@@ -29,7 +29,6 @@
 
 // console.log( num2 )
 
-
 // let num1 = Number(prompt("number 1"));
 
 // let action = prompt("action");
@@ -48,7 +47,6 @@
 
 // alert(`F ${F}`)
 
-
 // let secret = 7;
 
 // let pass = prompt("pass")
@@ -59,20 +57,14 @@
 
 //  let pass1 = "asdf";
 
-
 //  if ( login1 == login && pass1 == pass ){
 //     alert("true")
 //  }else {
 //     alert("false")}
 
-
-
-// if (secret === num){ 
+// if (secret === num){
 //     alert("all right")
 // }else alert( "wrong")
-
-
-
 
 // let num1 = Number(print("num1"));
 
@@ -99,7 +91,6 @@
 //     }
 //     e++
 // }
-
 
 // for (let i = 1; i <= 10; i++) {
 //     console.log(i)
@@ -129,7 +120,6 @@
 // console.log(Math.PI * r *2);
 // console.log(Math.PI * r * r )
 
-
 // let a=Number(prompt("a"));
 
 // let b=Number(prompt("b"));
@@ -145,18 +135,14 @@
 //      }
 // }
 //  else{
-//     console.log(b);   
+//     console.log(b);
 // }
-
-
-
 
 // function tars(){
 //     let x = Number(prompt("X"));
 //     while(x<99 || x>999 || x % 10 == 0 ){
 //        x=Number(prompt("X"))
 //     }
-
 
 //     let a = Math.floor(x / 100);
 //     let b = Math.floor((x - 100 * a) / 10);
@@ -178,7 +164,6 @@
 // let tiv = Number(prompt("x"));
 // tars(tiv)
 
-
 // function divid(a,b){
 //        if(a % b ==0){
 //         console.log("Yes");
@@ -192,44 +177,38 @@
 // divid(11,3);
 // divid(2,12)
 
-
-
-// function erankyun(a, b, c) {
-//     if (a >= b + c || b >= a + c || c >= a + b) {
-//         console.log("Doesn't exist")
-//     }else{
-//         console.log ( "Exist")
-//         let s=(a+b+c)/2
-//         console.log(Math.sqrt(s*(s-a)*(s-b)*(s-c)))
-        
-//     }
-// }
+function erankyun(a, b, c) {
+  if (a >= b + c || b >= a + c || c >= a + b) {
+    console.log("Doesn't exist");
+  } else {
+    console.log("Exist");
+    let s = (a + b + c) / 2;
+    console.log(Math.sqrt(s * (s - a) * (s - b) * (s - c)));
+  }
+}
 
 // erankyun(1, 2, 3);
 // erankyun(2, 2, 5)
-// erankyun(3, 4, 5);   
-
-
+// erankyun(3, 4, 5);
 
 let a = Number(prompt("Enter value for a (ax^2 + bx + c = 0):"));
 let b = Number(prompt("Enter value for b (ax^2 + bx + c = 0):"));
 let c = Number(prompt("Enter value for c (ax^2 + bx + c = 0):"));
 
 function discriminant(a, b, c) {
-    let D = b ** 2 - 4 * a * c; 
-     console.log(D);
-     
-    if (D < 0) {
-        console.log("X is not defined (no real solutions)");
-    } else if (D === 0) {  
-        let x = -b / (2 * a);
-        console.log("X =", x);
-    } else {
-        let x1 = (-b + Math.sqrt(D)) / (2 * a);
-        let x2 = (-b - Math.sqrt(D)) / (2 * a);
-        console.log("1. X =", x1);
-        console.log("2. X =", x2);
-    }
-}
-discriminant(a,b,c)
+  let D = b ** 2 - 4 * a * c;
+  console.log(D);
 
+  if (D < 0) {
+    console.log("X is not defined (no real solutions)");
+  } else if (D === 0) {
+    let x = -b / (2 * a);
+    console.log("X =", x);
+  } else {
+    let x1 = (-b + Math.sqrt(D)) / (2 * a);
+    let x2 = (-b - Math.sqrt(D)) / (2 * a);
+    console.log("1. X =", x1);
+    console.log("2. X =", x2);
+  }
+}
+discriminant(a, b, c);
